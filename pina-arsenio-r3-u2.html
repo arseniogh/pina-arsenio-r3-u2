@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+<!-- La hoja de estilo en cascada está en la carpeta ./css -->
+        <link rel = "stylesheet" href = "./css/main.css">
+        <title>Registro de la persona Usuaria</title>
+    </head>
+    <body>
+        <h1>Registro de la persona Usuaria</h1>
+<!-- Comienza el formulario -->
+        <form>
+<!-- Se usa la etiqueta <fieldset> para agrupar campos -->
+            <fieldset>
+                <legend>Nombre del usuario</legend>
+                <label for = "username">Nombre:</label>
+                <input type = "text" name = "username" id = "username"><br>
+                <label for = "userlastname">Apellido:</label>
+                <input type = "text" name = "userlastname" id = "userlastname"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de acceso</legend>
+                <label for = "useremail">Correo electrónico:</label>
+                <input type = "email" name = "useremail" id = "useremail"><br>
+                <label for = "userpassword">Contraseña:</label>
+                <input type = "password" name = "userpassword" id = "userpassword"><br>
+            </fieldset>
+<!-- Se usa <div> para separar secciones-->
+            <div class = "seccion">
+                <label for = "userdescription">Breve descripción:</label>
+                <textarea rows = "5" cols = "30" name = "userdescription" id = "userdescription">Escribe aquí sobre ti mismo.</textarea><br>
+            </div>
+            <div class = "seccion">
+                <label>Intereses:</label><br>
+<!-- Los elementos input de tipo checkbox se insertan dentro de los elementos label -->
+                <label class = "checkbox">
+                    <input type = "checkbox" name = "userinterest" value = "Tecnología">
+                    Tecnología
+                </label>
+                <label class = "checkbox">
+                    <input type = "checkbox" name = "userinterest" value = "Arte">
+                    Arte
+                </label>        
+                <label class = "checkbox">
+                    <input type = "checkbox" name = "userinterest" value = "Deporte">
+                    Deporte
+                </label>
+                <label class = "checkbox">
+                    <input type = "checkbox" name = "userinterest" value = "Ciencia">
+                    Ciencia
+                </label>  
+            </div>
+            <input type="submit" name="submit" id = "submit" value="Registrarse">
+        </form>
+    </body>
+</html>

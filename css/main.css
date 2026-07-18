@@ -1,0 +1,48 @@
+/* Selectores de elemento */
+form {
+    font-family: 'Lucida Console', 'Courier New'; /* Tipografía de fuente */
+    font-size: 20px; /* Tamaño de fuente */
+    background-color: rgb(246, 246, 246); /* Color de fondo para formulario */
+    padding: 10px;
+    border: 1px solid rgb(229, 229, 229); /* Borde del formulario*/
+}
+label {
+    font-weight: bold;
+}
+fieldset {
+    border: 1px solid rgb(229, 229, 229); /* Borde para campos */
+    background-color: rgb(242,242,242); /* Color de fondo para secciones */
+    box-shadow: 5px 5px 5px lightgrey;
+    padding: 10px;
+    margin: 10px;
+}
+/* Selectores de id */
+#userdescription {
+    vertical-align: top; /* Alineación vertical de su etiqueta */
+    background-color: rgb(233, 233, 233); /* Color de fondo para elemento */
+    border: 2px solid rgb(112, 164, 234); /* Borde para área de texto */
+    color: grey; /* Color de texto */
+}
+#submit { /* Se aplica cuando el puntero del mouse está fuera del botón submit */
+    margin: 10px;
+    font-size: 20px;
+    background-color: azure; /* Color de fondo para elemento */
+    color: black;
+}
+#submit:hover { /* Se aplica cuando el puntero del mouse está dentro del botón submit */
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(30, 140, 255); /* Color de fondo para elemento */
+    color: white;
+}
+/* Selectores de clase */
+.seccion {
+    background-color: rgb(242,242,242); /* Color de fondo para secciones */
+    box-shadow: 5px 5px 5px lightgrey;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(229,229,229);
+}
+.checkbox {
+    color:darkslategrey;
+}
